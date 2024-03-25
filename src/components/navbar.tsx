@@ -4,11 +4,11 @@ import { useState } from "react"
 import Link from "next/link";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  // const [isOpen, setIsOpen] = useState(false)
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen)
-  }
+  // const toggleMenu = () => {
+  //   setIsOpen(!isOpen)
+  // }
 
   return (
     <header className="text-gray-600 body-font lg:bg-white bg-blue-900 shadow-xl fixed z-50 w-full top-0">
@@ -53,7 +53,7 @@ const Navbar = () => {
         </button>
       </Link>
       <button className="max-lg:hidden text-blue-950 hover:text-orange-400 font-semibold py-0 px-4">UZ</button> 
-      <button className="lg:hidden" onClick={toggleMenu}>
+      {/* <button className="lg:hidden" onClick={toggleMenu}>
         {isOpen ? (
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10 text-white">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
@@ -63,9 +63,9 @@ const Navbar = () => {
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
         )}
-      </button>
+      </button> */}
     </div>
-    {isOpen && (
+    {/* {isOpen && (
       <nav className="flex z-50 bg-blue-900 text-white lg:hidden px-6 py-4">
         <ul className="w-1/2">
           <li className="w-36 py-2 hover:text-orange-400 cursor-pointer"><Link href={'/about'}>BIZ HAQIMIZDA</Link></li>
@@ -82,7 +82,7 @@ const Navbar = () => {
             <button className="text-white hover:text-orange-400 font-semibold py-0 px-4">UZ</button> 
         </div> 
       </nav>
-    )}
+    )} */}
   </header>
   )
 }
