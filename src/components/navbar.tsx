@@ -45,7 +45,7 @@ const Navbar = () => {
       <Link href={'tel:+998440252525'} className="">
         <button className="call-button items-center text-white border-0 py-2 px-3 focus:outline-none rounded-lg text-base mr-2 mt-0">
           <div className="default-btn flex justify-center">
-            <span>Qo'ng'iroq</span>
+            <span>Telefon</span>
           </div>
           <div className="hover-btn flex justify-center">
             <span>(44) 025 25 25</span>

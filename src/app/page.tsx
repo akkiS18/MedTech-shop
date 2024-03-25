@@ -99,7 +99,7 @@ export default function Home() {
       <p className="mb-8 leading-relaxed">Murojaat uchun</p>
       <div className="flex justify-center pb-12">
         <a className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Telegram</a>
-        <a href="tel:+998440252525" className="ml-4 inline-flex text-white bg-orange-400 border-0 py-2 px-6 focus:outline-none hover:bg-orange-500 rounded text-lg">Qo'ng'iroq</a>
+        <a href="tel:+998440252525" className="ml-4 inline-flex text-white bg-orange-400 border-0 py-2 px-6 focus:outline-none hover:bg-orange-500 rounded text-lg">Telefon</a>
       </div>
     </div>
     <div className="lg:max-w-lg lg:w-full md:w-2/3 w-5/6">

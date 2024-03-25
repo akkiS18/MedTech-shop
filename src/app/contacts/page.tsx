@@ -15,7 +15,7 @@ const Contacts = () => {
             <div className="w-10 h-10 mr-3 mb-8 inline-flex items-center justify-center rounded bg-indigo-500 text-white flex-shrink-0">
               <img src="https://imedical.uz/wp-content/themes/ideas/assets/img/contacts/contacts.svg" alt="" />
             </div><br />
-            <h2 className="text-gray-900 text-lg title-font font-medium">Qo'ng'iroq</h2>
+            <h2 className="text-gray-900 text-lg title-font font-medium">Telefon</h2>
           </div>
           <div className="flex-row">
             <a href='tel:+998440252525' className="mt-3 text-indigo-500 inline-flex items-center">
