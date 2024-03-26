@@ -1,10 +1,11 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Search = () => {
   return (
 <div className="pt-36">
   <h1 className='text-4xl font-bold text-blue-950 mb-10 text-center'>Qidirish</h1>
-  <div className="flex items-center justify-center pb-64">
+  <div className="flex items-center justify-center">
   <div className="rounded-lg bg-gray-200 p-5">
     <div className="flex">
       <div className="flex w-10 items-center justify-center rounded-tl-lg rounded-bl-lg border-r border-gray-200 bg-white p-5">
@@ -17,6 +18,26 @@ const Search = () => {
     </div>
   </div>
 </div>
+      <div className="flex flex-wrap -m-4 container px-5 py-24 mx-auto">
+        <div className="lg:w-1/4 md:w-1/2 w-full">
+          <div className='m-2 shadow p-4 rounded-lg hover:scale-105 transition-transform ease-out duration-200'>
+            <Link href={'/product'} className="block relative h-48 rounded overflow-hidden">
+              <img alt="elektron tijorat" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/420x260" />
+            </Link>
+            <div className="mt-4">
+              <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
+                <p>Kategoriya</p>
+              </h3>
+              <h2 className="text-gray-900 title-font text-lg font-medium">
+                <p>Katalizator</p>
+              </h2>
+              <p className="mt-1">
+                  $16.00
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 </div>
   )
 }

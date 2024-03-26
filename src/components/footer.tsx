@@ -48,25 +48,25 @@ export default function Footer() {
       <div className="w-full">
         <nav className="list-none mb-10">
           <li className='py-2'>
-            <a className="text-white hover:text-orange-400 cursor-pointer">Biz haqimizda</a>
+            <Link href={'/about'} className="text-white hover:text-orange-400 cursor-pointer">Biz haqimizda</Link>
           </li>
           <li className='py-2'>
-            <a className="text-white hover:text-orange-400 cursor-pointer">Katalog</a>
+            <Link href={'/catalog'} className="text-white hover:text-orange-400 cursor-pointer">Katalog</Link>
           </li>
           <li className='py-2'>
-            <a className="text-white hover:text-orange-400 cursor-pointer">Kontaktlar</a>
+            <Link href={'/contacts'} className="text-white hover:text-orange-400 cursor-pointer">Kontaktlar</Link>
           </li>
           <li className='py-2'>
-            <a className="text-white hover:text-orange-400 cursor-pointer">Maxfiylik siyosati</a>
+            <Link href={'/'} className="text-white hover:text-orange-400 cursor-pointer">Maxfiylik siyosati</Link>
           </li>
           <li className='py-2'>
-            <a className="text-white hover:text-orange-400 cursor-pointer">Foydalanish shartlari</a>
+            <Link href={'/'} className="text-white hover:text-orange-400 cursor-pointer">Foydalanish shartlari</Link>
           </li>
           <li className='py-2'>
-            <a className="text-white hover:text-orange-400 cursor-pointer">Корпорация</a>
+            <Link href={'/'} className="text-white hover:text-orange-400 cursor-pointer">Корпорация</Link>
           </li>
           <li className='py-2'>
-            <a className="text-white hover:text-orange-400 cursor-pointer">Карьера</a>
+            <Link href={'/'} className="text-white hover:text-orange-400 cursor-pointer">Карьера</Link>
           </li>
         </nav>
       </div>
