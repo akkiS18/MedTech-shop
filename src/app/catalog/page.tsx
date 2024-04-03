@@ -22,7 +22,7 @@ const Catalog = async ({
     <div className="w-full px-24">
     <h1 className='text-4xl text-blue-950 font-bold text-center mt-8'>Mahsulotlar</h1>
       <div className="mt-4 flex items-center justify-between gap-2 md:mt-8">
-        <Search placeholder="Search..."/>
+        <Search />
       </div>
        <Suspense key={query + currentPage} fallback={<Skeleton />}>
         <Table query={query} currentPage={currentPage} />
