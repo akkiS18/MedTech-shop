@@ -36,13 +36,13 @@ const Navbar = () => {
           <div className="emptybar"></div>
         </div></Link>
       </nav>
-      <Link href={'/search'} className="max-lg:hidden header-top__action-btn">
+      <Link href={'/catalog'} className="max-lg:hidden header-top__action-btn">
         <svg width="25" height="25" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M7.25 13C10.1495 13 12.5 10.6495 12.5 7.75C12.5 4.85051 10.1495 2.5 7.25 2.5C4.35051 2.5 2 4.85051 2 7.75C2 10.6495 4.35051 13 7.25 13Z" stroke="#828282" stroke-linecap="round" stroke-linejoin="round"></path>
             <path d="M10.9625 11.4625L14 14.5" stroke="#828282" stroke-linecap="round" stroke-linejoin="round"></path>
         </svg>
       </Link>
-      <Link href={'tel:+998440252525'} className="">
+      <Link href={'tel:+998440252525'} className="max-sm:hidden">
         <button className="call-button items-center text-white border-0 py-2 px-3 focus:outline-none rounded-lg text-base mr-2 mt-0">
           <div className="default-btn flex justify-center">
             <span> Telefon </span>
@@ -73,7 +73,7 @@ const Navbar = () => {
           <li className="w-36 py-2 hover:text-orange-400 cursor-pointer"><Link href={'/contacts'}>KONTAKTLAR</Link></li>
         </ul>
         <div className="w-1/2 flex flex-row justify-end items-center">
-          <Link href={'/search'} className="header-top__action-btn">
+          <Link href={'/catalog'} className="header-top__action-btn">
             <svg width="25" height="25" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7.25 13C10.1495 13 12.5 10.6495 12.5 7.75C12.5 4.85051 10.1495 2.5 7.25 2.5C4.35051 2.5 2 4.85051 2 7.75C2 10.6495 4.35051 13 7.25 13Z" stroke="#828282" stroke-linecap="round" stroke-linejoin="round"></path>
                 <path d="M10.9625 11.4625L14 14.5" stroke="#828282" stroke-linecap="round" stroke-linejoin="round"></path>

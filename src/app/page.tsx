@@ -3,7 +3,7 @@ import Statistics from "@/components/stat";
 import Link from "next/link";
 
 export default function Home() {
-  return (
+  return ( 
     <div>
       <div className="z-index max-md:hidden">
         <a href="tel:+998440252525">

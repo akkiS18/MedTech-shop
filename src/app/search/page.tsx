@@ -1,44 +1,41 @@
-import Link from 'next/link'
-import React from 'react'
+'use client';
 
-const Search = () => {
+import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
+import { useSearchParams, usePathname, useRouter } from 'next/navigation';
+import { useDebouncedCallback } from 'use-debounce';
+
+const Search = ({ placeholder }: { placeholder: string }) => {
+  const searchParams = useSearchParams();
+  const pathname = usePathname();
+  const { replace } = useRouter();
+
+  const handleSearch = useDebouncedCallback((term) => {
+    console.log(`Searching... ${term}`);
+
+    const params = new URLSearchParams(searchParams);
+    if (term) {
+      params.set('query', term);
+    } else {
+      params.delete('query');
+    }
+    replace(`${pathname}?${params.toString()}`);
+  }, 300);
+
   return (
-<div className="pt-36">
-  <h1 className='text-4xl font-bold text-blue-950 mb-10 text-center'>Qidirish</h1>
-  <div className="flex items-center justify-center">
-  <div className="rounded-lg bg-gray-200 p-5">
-    <div className="flex">
-      <div className="flex w-10 items-center justify-center rounded-tl-lg rounded-bl-lg border-r border-gray-200 bg-white p-5">
-        <svg viewBox="0 0 20 20" aria-hidden="true" className="pointer-events-none absolute w-5 fill-gray-500 transition">
-          <path d="M16.72 17.78a.75.75 0 1 0 1.06-1.06l-1.06 1.06ZM9 14.5A5.5 5.5 0 0 1 3.5 9H2a7 7 0 0 0 7 7v-1.5ZM3.5 9A5.5 5.5 0 0 1 9 3.5V2a7 7 0 0 0-7 7h1.5ZM9 3.5A5.5 5.5 0 0 1 14.5 9H16a7 7 0 0 0-7-7v1.5Zm3.89 10.45 3.83 3.83 1.06-1.06-3.83-3.83-1.06 1.06ZM14.5 9a5.48 5.48 0 0 1-1.61 3.89l1.06 1.06A6.98 6.98 0 0 0 16 9h-1.5Zm-1.61 3.89A5.48 5.48 0 0 1 9 14.5V16a6.98 6.98 0 0 0 4.95-2.05l-1.06-1.06Z"></path>
-        </svg>
-      </div>
-      <input type="text" className="w-full bg-white pl-2 text-base font-semibold outline-0" placeholder="Tovarlarni qidirish" id="" />
-      <input type="button" value="Qidirish" className="bg-orange-400 p-2 rounded-tr-lg rounded-br-lg text-white font-semibold hover:bg-blue-800 transition-colors" />
+<div className="relative flex flex-1 flex-shrink-0">
+      <label htmlFor="search" className="sr-only">
+        Search
+      </label>
+      <input
+        className="peer block w-full rounded-md border border-blue-900 py-[9px] pl-10 text-sm outline-2 placeholder:text-gray-500"
+        placeholder={placeholder}
+        onChange={(e) => {
+          handleSearch(e.target.value);
+        }}
+        defaultValue={searchParams.get('query')?.toString()}
+      />
+      <MagnifyingGlassIcon className="absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500 peer-focus:text-orange-400" />
     </div>
-  </div>
-</div>
-      <div className="flex flex-wrap -m-4 container px-5 py-24 mx-auto">
-        <div className="lg:w-1/4 md:w-1/2 w-full">
-          <div className='m-2 shadow p-4 rounded-lg hover:scale-105 transition-transform ease-out duration-200'>
-            <Link href={'/product'} className="block relative h-48 rounded overflow-hidden">
-              <img alt="elektron tijorat" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/420x260" />
-            </Link>
-            <div className="mt-4">
-              <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                <p>Kategoriya</p>
-              </h3>
-              <h2 className="text-gray-900 title-font text-lg font-medium">
-                <p>Katalizator</p>
-              </h2>
-              <p className="mt-1">
-                  $16.00
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-</div>
   )
 }
 
