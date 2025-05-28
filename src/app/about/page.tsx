@@ -30,7 +30,7 @@ const About = () => {
 					<img
 						className="object-cover object-center rounded"
 						alt="hero"
-						src="https://imedical.uz/wp-content/uploads/2023/07/rectangle-336-min.png"
+						src="img1.png"
 					/>
 				</div>
 			</div>

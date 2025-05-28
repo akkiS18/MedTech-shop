@@ -9,14 +9,14 @@ export default function Home() {
 				<a href="tel:+998440252525">
 					<img
 						className="w-15 h-15 lg:w-20 lg:h-20 mb-2"
-						src="https://imedical.uz/wp-content/themes/ideas/assets/img/phone.png"
+						src="phone.png"
 						alt=""
 					/>
 				</a>
 				<a>
 					<img
 						className="w-15 h-15 lg:w-20 lg:h-20"
-						src="https://imedical.uz/wp-content/themes/ideas/assets/img/tg.png"
+						src="tg.png"
 						alt=""
 					/>
 				</a>
@@ -150,7 +150,7 @@ export default function Home() {
 						<img
 							className="object-cover object-center rounded"
 							alt="hero"
-							src="https://imedical.uz/wp-content/uploads/2023/07/rectangle-305-min.png"
+							src="img1.png"
 						/>
 					</div>
 				</div>
@@ -183,7 +183,7 @@ export default function Home() {
 				</div>
 			</section>
 			<Statistics />
-			<section className="text-gray-600 body-font px-12 py-12 max-xl:hidden">
+			<section className="text-gray-600 body-font pl-12 max-xl:hidden">
 				<div className="flex md:flex-row flex-col items-center">
 					<div className="lg:flex-grow md:w-1/3 flex px-12 flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
 						<h1 className="title-font sm:text-4xl text-3xl font-bold text-blue-900">
@@ -203,9 +203,9 @@ export default function Home() {
 					</div>
 					<div className="lg:max-w-lg lg:w-full md:w-2/3 w-5/6">
 						<img
-							className="object-cover object-center rounded"
+							className="object-cover h-full"
 							alt="hero"
-							src="https://imedical.uz/wp-content/themes/ideas/assets/img/consult/img3.png"
+							src="img3.jpg"
 						/>
 					</div>
 				</div>

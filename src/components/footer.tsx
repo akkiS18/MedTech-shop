@@ -190,7 +190,7 @@ export default function Footer() {
 			<div className="pb-12">
 				<div className="container mx-auto">
 					<p className="text-white text-sm text-center sm:text-left">
-						© 2024 Example. All rights reserved.
+						© 2024 MedTech.
 					</p>
 				</div>
 			</div>

@@ -15,7 +15,7 @@ export default function Catalog() {
 							<img
 								alt="elektron tijorat"
 								className="object-cover object-center w-full h-full block"
-								src="https://imedical.uz/wp-content/uploads/2023/07/rectangle-336-min.png"
+								src="img1.png"
 							/>
 						</Link>
 						<div className="mt-4">
@@ -37,7 +37,7 @@ export default function Catalog() {
 							<img
 								alt="elektron tijorat"
 								className="object-cover object-center w-full h-full block"
-								src="https://imedical.uz/wp-content/uploads/2023/07/rectangle-336-min.png"
+								src="img1.png"
 							/>
 						</Link>
 						<div className="mt-4">
@@ -59,7 +59,7 @@ export default function Catalog() {
 							<img
 								alt="elektron tijorat"
 								className="object-cover object-center w-full h-full block"
-								src="https://imedical.uz/wp-content/uploads/2023/07/rectangle-336-min.png"
+								src="img1.png"
 							/>
 						</Link>
 						<div className="mt-4">
@@ -81,7 +81,7 @@ export default function Catalog() {
 							<img
 								alt="elektron tijorat"
 								className="object-cover object-center w-full h-full block"
-								src="https://imedical.uz/wp-content/uploads/2023/07/rectangle-336-min.png"
+								src="img1.png"
 							/>
 						</Link>
 						<div className="mt-4">
@@ -103,7 +103,7 @@ export default function Catalog() {
 							<img
 								alt="elektron tijorat"
 								className="object-cover object-center w-full h-full block"
-								src="https://imedical.uz/wp-content/uploads/2023/07/rectangle-336-min.png"
+								src="img1.png"
 							/>
 						</Link>
 						<div className="mt-4">
